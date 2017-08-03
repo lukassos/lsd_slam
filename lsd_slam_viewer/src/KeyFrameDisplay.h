@@ -26,7 +26,7 @@
 #include "QGLViewer/qglviewer.h"
 #include "lsd_slam_viewer/keyframeMsg.h"
 #include "sophus/sim3.hpp"
-
+#include <string>     // std::string, std::to_string
 #include <sstream>
 #include <fstream>
 

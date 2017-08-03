@@ -27,6 +27,7 @@
 #include <vector>
 #include "boost/thread.hpp"
 #include "qevent.h"
+#include <string>     // std::string, std::to_string
 #include "lsd_slam_viewer/keyframeMsg.h"
 #include "lsd_slam_viewer/keyframeGraphMsg.h"
 

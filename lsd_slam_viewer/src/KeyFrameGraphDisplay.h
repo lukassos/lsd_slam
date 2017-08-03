@@ -27,6 +27,7 @@
 #include "lsd_slam_viewer/keyframeGraphMsg.h"
 #include "lsd_slam_viewer/keyframeMsg.h"
 #include "boost/thread.hpp"
+#include <string>     // std::string, std::to_string
 
 class KeyFrameDisplay;
 
