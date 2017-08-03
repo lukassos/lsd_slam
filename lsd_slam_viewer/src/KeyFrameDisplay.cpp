@@ -91,7 +91,11 @@ void KeyFrameDisplay::setFrom(lsd_slam_viewer::keyframeMsgConstPtr msg)
 		if(msg->pointcloud.size() != 0)
 		{
 			printf("WARNING: PC with points, but number of points not right! (is %zu, should be %u*%dx%d=%u)\n",
-					msg->pointcloud.size(), sizeof(InputPointDense), width, height, width*height*sizeof(InputPointDense));
+                   msg->pointcloud.size(),
+				   sizeof(InputPointDense),
+				   width,
+				   height,
+				   width*height*sizeof(InputPointDense));
 		}
 	}
 	else
@@ -335,7 +339,10 @@ int KeyFrameDisplay::flushPC(std::ofstream* f)
 
 	delete tmpBuffer;
 
-	printf("Done flushing frame %d (%d points)!\n", this->id, num);
+	printf("Done flushing frame %s (%s points)!\n",
+           std::to_string(this->id),
+           std::to_string(num)
+    );
 	return num;
 }
 
